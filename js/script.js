@@ -11,9 +11,9 @@ if (!isNaN(age) && !isNaN(distance)) {
   let ticketPrice = 0.21 * distance;
   let discountedPrice;
   if (age <= 18) {
-    discountedPrice = ticketPrice * 0.2;
+    discountedPrice = ticketPrice - ticketPrice * 0.2;
   } else if (age >= 18) {
-    discountedPrice = ticketPrice * 0.4;
+    discountedPrice = ticketPrice - ticketPrice * 0.4;
   } else {
     discountedPrice = ticketPrice;
   }
